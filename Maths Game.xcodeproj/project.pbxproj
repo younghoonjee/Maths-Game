@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		ACF20DD61E4A6FFF00F2870E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF20DD51E4A6FFF00F2870E /* main.m */; };
+		ACF20DDE1E4A713600F2870E /* Maths Game.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF20DDD1E4A713600F2870E /* Maths Game.m */; };
+		ACF20DE11E4A8F6E00F2870E /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF20DE01E4A8F6E00F2870E /* AdditionQuestion.m */; };
+		ACF20DE41E4AD99A00F2870E /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF20DE31E4AD99A00F2870E /* InputHandler.m */; };
+		ACF20DE71E4ADDDA00F2870E /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF20DE61E4ADDDA00F2870E /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		ACF20DD21E4A6FFF00F2870E /* Maths Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Maths Game"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF20DD51E4A6FFF00F2870E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACF20DDC1E4A713600F2870E /* Maths Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Maths Game.h"; sourceTree = "<group>"; };
+		ACF20DDD1E4A713600F2870E /* Maths Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Maths Game.m"; sourceTree = "<group>"; };
+		ACF20DDF1E4A8F6E00F2870E /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		ACF20DE01E4A8F6E00F2870E /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		ACF20DE21E4AD99A00F2870E /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		ACF20DE31E4AD99A00F2870E /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		ACF20DE51E4ADDDA00F2870E /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		ACF20DE61E4ADDDA00F2870E /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				ACF20DD51E4A6FFF00F2870E /* main.m */,
+				ACF20DE51E4ADDDA00F2870E /* ScoreKeeper.h */,
+				ACF20DE61E4ADDDA00F2870E /* ScoreKeeper.m */,
+				ACF20DDD1E4A713600F2870E /* Maths Game.m */,
+				ACF20DDC1E4A713600F2870E /* Maths Game.h */,
+				ACF20DDF1E4A8F6E00F2870E /* AdditionQuestion.h */,
+				ACF20DE01E4A8F6E00F2870E /* AdditionQuestion.m */,
+				ACF20DE21E4AD99A00F2870E /* InputHandler.h */,
+				ACF20DE31E4AD99A00F2870E /* InputHandler.m */,
 			);
 			path = "Maths Game";
 			sourceTree = "<group>";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF20DE71E4ADDDA00F2870E /* ScoreKeeper.m in Sources */,
+				ACF20DDE1E4A713600F2870E /* Maths Game.m in Sources */,
+				ACF20DE11E4A8F6E00F2870E /* AdditionQuestion.m in Sources */,
 				ACF20DD61E4A6FFF00F2870E /* main.m in Sources */,
+				ACF20DE41E4AD99A00F2870E /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +270,7 @@
 				ACF20DDB1E4A6FFF00F2870E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
