@@ -2,7 +2,7 @@
 //  AdditionQuestion.m
 //  Maths Game
 //
-//  Created by Younghoon jee on 2017. 2. 7..
+//  Created by Younghoon jee on 2017. 2. 8..
 //  Copyright © 2017년 Younghoon jee. All rights reserved.
 //
 
@@ -10,22 +10,10 @@
 
 @implementation AdditionQuestion
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-        int num1 = arc4random_uniform(100) + 10;
-        int num2 = arc4random_uniform(100) + 10;
-        
-        _question = [[NSString alloc] initWithFormat: @"%i + %i ?", num1,num2];
-        _answer = num1 + num2;
-        
-        
-    }
-    return self;
+-(void)generateQuestion{
+    
+    self.question = [[NSString alloc] initWithFormat: @"%ld + %ld ?", self.rightValue,self.leftValue];
+    self.answer = self.rightValue + self.leftValue;
 }
-
-
 
 @end

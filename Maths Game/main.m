@@ -8,29 +8,38 @@
 
 #import <Foundation/Foundation.h>
 #import "Maths Game.h"
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionManager.h"
+#import "QuestionFactory.h"
+
+
 
 
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+       
+        BOOL gameOn = YES;
         NSLog(@"MATHS!");
+       
 
         
-        BOOL gameOn = YES;
         
         ScoreKeeper *score = [[ScoreKeeper alloc] init];
+        QuestionManager *manager = [[QuestionManager alloc] init];
+        QuestionFactory *factory = [[QuestionFactory alloc] init];
         
 
         
         while(gameOn){
             
-            AdditionQuestion *questionReceived = [[AdditionQuestion alloc] init];
+            Question *questionReceived = [factory generateRandomQuestion];
             NSLog(@"%@",questionReceived.question);
+            
+            [manager.questions addObject:questionReceived];
             
             NSString *strippedString = [InputHandler handleInput];
             
@@ -60,6 +69,7 @@ int main(int argc, const char * argv[]) {
             
             [score trackScore];
          
+          NSLog(@"%@",  [manager timeOutput]);
             
         }
         

@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  DivisionQuestion.h
 //  Maths Game
 //
 //  Created by Younghoon jee on 2017. 2. 8..
@@ -8,8 +8,6 @@
 
 #import "Question.h"
 
-@interface AdditionQuestion : Question
-
-
+@interface DivisionQuestion : Question
 
 @end
